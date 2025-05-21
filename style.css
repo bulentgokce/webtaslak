@@ -13,3 +13,20 @@ p {
   color: #333;
   font-size: 18px;
 }
+
+.hakkimizda{
+  background-color= white;
+  padding 20px;
+  border-radius:10px;
+  max-width:600px
+  margin=30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hakkimizda h2 {
+  color=444;
+}
+.hakkimizda p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
