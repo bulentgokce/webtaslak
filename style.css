@@ -30,3 +30,11 @@ p {
   font-size: 16px;
   line-height: 1.6;
 }
+
+.profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%
+  object-fit: cover;
+  margin-bottom: 15px;
+}
