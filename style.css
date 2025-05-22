@@ -1,40 +1,110 @@
+/* Genel Ayarlar */
 body {
-  background-color: #f2f2f2;
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 50px;
-}
-
-h1 {
-  color: #3366cc;
-}
-
-p {
-  color: #333;
-  font-size: 18px;
-}
-
-.hakkimizda {
-  background-color= white;
-  padding 20px;
-  border-radius:10px;
-  max-width:600px
-  margin=30px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.hakkimizda h2 {
-  color=444;
-}
-.hakkimizda p {
-  color: #666;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.profil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%
-  object-fit: cover;
-  margin-bottom: 15px;
+/* Başlık ve Menü */
+header {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #30D5C8;
+}
+
+/* Bölümler */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  margin-top: 20px;
+}
+/* Mobil cihazlar için özel stil */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Buton Stili */
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #007bff;
+  padding: 12px 24px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  position: relative;
+}
+
+.btn .icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007bff10;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.btn:hover .icon {
+  transform: translateX(4px);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
 }
