@@ -101,7 +101,7 @@ footer {
 }
 
 .btn:hover .icon {
-  transform: translateX(4px);
+  transform: translateY(-4px);
 }
 
 .btn:active {
